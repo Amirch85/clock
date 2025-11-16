@@ -1,0 +1,93 @@
+@font-face {
+  font-family: chacha;
+  src: url(./digital-clock.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: chacha;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.in {
+    width: 80%;
+    max-width: 900px;
+    background-color: #000000cc;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 2% 0;
+    box-shadow: 0 0 20px rgba(0,0,255,0.3);
+}
+
+.time {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+#hrs, #min, #sec, #day {
+    color: #00f;
+    font-family: chacha;
+    text-shadow:
+        0 0 1px #00f,
+        0 0 3px #00f;
+}
+
+#hrs {
+    font-size: 10vw;
+}
+
+#min {
+    font-size: 7vw;
+}
+
+#sec {
+    font-size: 5vw;
+}
+
+.days {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#day {
+    font-size: 3vw;
+}
+
+@media (max-width: 500px) {
+    .in {
+        width: 90%;
+        gap: 3%;
+    }
+
+    .time {
+        gap: 3%;
+    }
+}
