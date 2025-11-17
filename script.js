@@ -18,4 +18,4 @@ setInterval(() => {
     let day = currentime.getDay();
     dayel.innerHTML = weekdays[day];
 
-}, 1000);
+}, 500);
