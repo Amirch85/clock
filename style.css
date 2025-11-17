@@ -26,12 +26,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .in {
     width: 80%;
     max-width: 900px;
-    background-color: #000000cc;
+    background-color: gray;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -39,7 +41,7 @@ body {
     align-items: center;
     gap: 5%;
     padding: 2% 0;
-    box-shadow: 0 0 20px rgba(0,0,255,0.3);
+    box-shadow: 0 0 10px rgba(237, 233, 233, 0.3);
 }
 
 .time {
@@ -50,12 +52,10 @@ body {
     gap: 5%;
 }
 
-#hrs, #min, #sec, #day ,#dot1 , #dot2{
-    color: #00f;
+#hrs, #min, #sec, #day ,#dot1 , #dot2 ,h3{
+  color: black;
     font-family: chacha;
-    text-shadow:
-        0 0 1px #00f,
-        0 0 3px #00f;
+
 }
 #dot1{
 
@@ -88,6 +88,23 @@ body {
     font-size: 3vw;
 }
 
+    .digital{
+         width: 80%;
+    max-width: 900px;
+     
+       display: flex;
+       align-items: center;
+       justify-content: center;
+}
+.digital h1{
+    color: rgb(250, 235, 215);
+  font-family: chacha;
+  font-size: 3vw;
+  letter-spacing: 0.5vw;
+       
+}
+
+
 @media (max-width: 500px) {
     .in {
         width: 90%;
@@ -97,4 +114,20 @@ body {
     .time {
         gap: 3%;
     }
+
+    
+
 }
+
+
+@media (max-width: 500px) {
+    .digital {
+        width: 90%;
+        gap: 3%;
+    }
+
+
+    
+}
+
+
